@@ -11,8 +11,12 @@
     $_GET["badWord"];
 
     $paragraph = str_replace($_GET, '****', $paragraph);
-    var_dump($paragraph);
+    echo($paragraph);
+
     ?>
+    <br>
+    <span>Lunghezza stringa:</span>
+      <?php echo strlen($paragraph)  ?>
     <br>
     <a href="http://localhost/php-badwords/index.php?badWord=adipisicing"><input type="button" name="" value="active"></input></a>
     <?php
